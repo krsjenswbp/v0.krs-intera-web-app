@@ -1,30 +1,65 @@
-# Interaction web app
+# Swift App Preview
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/krsjenswbs-projects/v0-interaction-web-app)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/dHWK38npDV6)
+Built with [v0.app](https://v0.app) 🚀
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+This project is an interactive web preview of a Swift playground application, enhanced with modern web components and deployed on Vercel.
+
+## Features
+
+- **Swift App Preview**: Web recreation of the original iOS ContentView with globe icon
+- **Interactive Web Resources**: Multiple preview pages showcasing web assets
+- **Modern UI**: Built with Next.js, Tailwind CSS, and shadcn/ui components
+- **Responsive Design**: Optimized for all device sizes
+
+## Quick Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+## Built With
+
+- **[v0.app](https://v0.app)** - AI-powered frontend development
+- **[Next.js](https://nextjs.org)** - React framework
+- **[Tailwind CSS](https://tailwindcss.com)** - Utility-first CSS
+- **[shadcn/ui](https://ui.shadcn.com)** - UI components
+- **[Vercel](https://vercel.com)** - Deployment platform
+
+## Project Structure
+
+### Swift Files (Original)
+- `MyApp.swift` - Main app entry point
+- `ContentView.swift` - Primary view with globe icon
+- `LiveView.swift` - WebView integration
+- `Contents.swift` - Content management
+
+### Web Assets
+- HTML pages with tab interface
+- WebGL graphics and shaders
+- Particle effects system
+- Parallax scrolling animations
+
+## Development
+
+\`\`\`bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+\`\`\`
 
 ## Deployment
 
-Your project is live at:
+This project is optimized for Vercel deployment:
 
-**[https://vercel.com/krsjenswbs-projects/v0-interaction-web-app](https://vercel.com/krsjenswbs-projects/v0-interaction-web-app)**
+1. **One-click deploy**: Use the Deploy button above
+2. **From v0**: Click "Publish" in the v0 interface
+3. **Manual deploy**: Connect your GitHub repo to Vercel
 
-## Build your app
+---
 
-Continue building your app on:
-
-**[https://v0.app/chat/projects/dHWK38npDV6](https://v0.app/chat/projects/dHWK38npDV6)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+*Created with ❤️ using [v0.app](https://v0.app)*
