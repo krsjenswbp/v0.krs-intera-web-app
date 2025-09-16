@@ -47,6 +47,15 @@ export default function HomePage() {
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <Button asChild variant="default" className="h-auto p-4">
+                <Link href="/portfolio" className="flex flex-col items-center space-y-2">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                    <span className="text-sm font-bold text-primary-foreground">P</span>
+                  </div>
+                  <span>Portfolio</span>
+                </Link>
+              </Button>
+
               <Button asChild variant="outline" className="h-auto p-4 bg-transparent">
                 <Link href="/preview/intro" className="flex flex-col items-center space-y-2">
                   <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
