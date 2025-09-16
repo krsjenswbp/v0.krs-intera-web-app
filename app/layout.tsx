@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
+import "../styles/primer-patterns.css"
 
 export const metadata: Metadata = {
   title: "Swift App Preview | Built with v0",
