@@ -242,17 +242,34 @@
     box-shadow: var(--liquid-glass-box-shadow);
   }
 
+  /* Updated liquid glass button styles for better contrast accessibility */
   .liquid-glass-button {
     backdrop-filter: var(--liquid-glass-button-backdrop-filter);
     background: var(--liquid-glass-button-background);
     border: var(--liquid-glass-button-border);
     transition: var(--liquid-glass-button-transition);
+    /* Ensure text has sufficient contrast */
+    color: hsl(var(--foreground));
   }
 
   .liquid-glass-button:hover {
     background: var(--liquid-glass-button-hover-background);
     transform: var(--liquid-glass-button-hover-transform);
     box-shadow: var(--liquid-glass-button-hover-box-shadow);
+    /* Maintain contrast on hover */
+    color: hsl(var(--foreground));
+  }
+
+  /* Special styling for active/primary buttons with better contrast */
+  .liquid-glass-button.liquid-glow-primary {
+    background: rgba(255, 255, 255, 0.15);
+    color: hsl(var(--foreground));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .liquid-glass-button.liquid-glow-primary:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: hsl(var(--foreground));
   }
 
   .liquid-glass-card {
@@ -274,10 +291,13 @@
     background: var(--liquid-glass-panel-background);
   }
 
+  /* Updated tag styles for better contrast */
   .liquid-glass-tag {
     backdrop-filter: var(--liquid-glass-tag-backdrop-filter);
     background: var(--liquid-glass-tag-background);
     border: var(--liquid-glass-tag-border);
+    /* Ensure tag text has sufficient contrast */
+    color: hsl(var(--foreground));
   }
 
   .liquid-glass-avatar {
@@ -305,6 +325,7 @@
     transform: var(--liquid-morph-hover-transform);
   }
 
+  /* Updated hover effects to maintain proper contrast */
   .liquid-hover-effect {
     transition: var(--liquid-hover-effect-transition);
   }
@@ -312,6 +333,8 @@
   .liquid-hover-effect:hover {
     background: var(--liquid-hover-effect-hover-background);
     transform: var(--liquid-hover-effect-hover-transform);
+    /* Maintain text contrast on hover */
+    color: hsl(var(--foreground));
   }
 
   .liquid-hover-lift:hover {
@@ -332,12 +355,17 @@
     box-shadow: var(--liquid-glow-primary-box-shadow);
   }
 
+  /* Updated hover text effects for better accessibility */
   .liquid-hover {
     transition: var(--liquid-hover-transition);
+    /* Ensure base text has proper contrast */
+    color: hsl(var(--foreground));
   }
 
   .liquid-hover:hover {
     text-shadow: var(--liquid-hover-hover-text-shadow);
+    /* Maintain contrast on hover */
+    color: hsl(var(--foreground));
   }
 
   /* Container */

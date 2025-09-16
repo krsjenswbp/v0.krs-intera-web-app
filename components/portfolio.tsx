@@ -286,29 +286,99 @@ export default function Portfolio() {
 
         {/* Contact Section */}
         <section id="contact" className="min-h-screen flex items-center justify-center px-4 py-20">
-          <Card className="liquid-glass-card max-w-2xl w-full p-8 liquid-morph">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center liquid-text-glow">Let's Work Together</h2>
-            <div className="text-center mb-8">
-              <p className="text-base leading-relaxed mb-6 liquid-text">
-                I'm always interested in new opportunities and exciting projects. Whether you have a question or just
-                want to say hi, I'll try my best to get back to you!
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="liquid-glass-button liquid-morph">
-                <Mail className="h-4 w-4 mr-2" />
-                Send Email
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="liquid-glass-button liquid-morph bg-transparent border-white/20"
-              >
-                <Linkedin className="h-4 w-4 mr-2" />
-                Connect on LinkedIn
-              </Button>
-            </div>
-          </Card>
+          <div className="max-w-4xl w-full space-y-8">
+            <Card className="liquid-glass-card p-8 liquid-morph">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center liquid-text-glow">Let's Work Together</h2>
+
+              <div className="mb-12">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-semibold mb-4 liquid-text">Swift App Development</h3>
+                  <p className="text-base leading-relaxed mb-6 liquid-text">
+                    Recently worked on a Swift playground project featuring interactive web components and modern iOS
+                    development patterns.
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+                  {/* Swift App Preview */}
+                  <Card className="liquid-glass-card p-6 text-center liquid-morph">
+                    <h4 className="text-lg font-medium mb-4 liquid-text">Swift App Preview</h4>
+                    <div className="flex flex-col items-center space-y-4 py-4">
+                      <Globe className="w-16 h-16 text-primary liquid-glow-primary" />
+                      <h1 className="text-xl font-medium liquid-text">Hello, world!</h1>
+                      <p className="text-sm text-muted-foreground liquid-text">Original ContentView from MyApp.swift</p>
+                    </div>
+                  </Card>
+
+                  {/* Project Details */}
+                  <div className="space-y-4">
+                    <h4 className="text-lg font-medium liquid-text">Project Features</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 liquid-glow-primary"></div>
+                        <div>
+                          <p className="font-medium liquid-text">SwiftUI Interface</p>
+                          <p className="text-sm text-muted-foreground liquid-text">
+                            Modern iOS app with ContentView and LiveView components
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 liquid-glow-primary"></div>
+                        <div>
+                          <p className="font-medium liquid-text">Web Integration</p>
+                          <p className="text-sm text-muted-foreground liquid-text">
+                            WebGL graphics, particle effects, and interactive web components
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 liquid-glow-primary"></div>
+                        <div>
+                          <p className="font-medium liquid-text">Cross-Platform</p>
+                          <p className="text-sm text-muted-foreground liquid-text">
+                            Swift Playground with HTML/CSS/JS web assets
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2 pt-4">
+                      {["Swift", "SwiftUI", "WebGL", "HTML5", "CSS3", "JavaScript"].map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-3 py-1 liquid-glass-tag text-primary rounded-full text-sm liquid-hover-effect"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center mb-8">
+                <p className="text-base leading-relaxed mb-6 liquid-text">
+                  I'm always interested in new opportunities and exciting projects. Whether you have a question or just
+                  want to say hi, I'll try my best to get back to you!
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="liquid-glass-button liquid-morph">
+                  <Mail className="h-4 w-4 mr-2" />
+                  Send Email
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="liquid-glass-button liquid-morph bg-transparent border-white/20"
+                >
+                  <Linkedin className="h-4 w-4 mr-2" />
+                  Connect on LinkedIn
+                </Button>
+              </div>
+            </Card>
+          </div>
         </section>
       </main>
 
